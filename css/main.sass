@@ -33,7 +33,7 @@ h2
 
 p
   font-size: 17px
-  width: 40%
+  width: 60%
   margin: 0 auto
   color: $text-color
   text-align: center
@@ -86,6 +86,11 @@ a
   position: relative
   width: 100%
 
+div.social-icons
+  display: flex
+  justify-content: center
+  a
+    text-align: center
 div.banner
   background-image: url("../resources/banner1.jpg")
   background-position: center
@@ -93,7 +98,7 @@ div.banner
   h3
     color: $white
     font-size: 50px
-    padding-top: 160px
+    padding-top: 60px
     text-align: center
     text-shadow: 0 0 1px transparent
     text-rendering: optimizeLegibility
@@ -123,6 +128,7 @@ div.skills
   flex-wrap: wrap
   width: 60%
   margin: 0 auto
+  flex: 1 1 calc(25% - 1rem)
 
 
 div.skill
@@ -172,7 +178,7 @@ div.contact
   p
     color: $white
   a.mail-button
-    width: 400px
+    width: 15rem
     text-align: center
     margin: 50px auto
     border: 1px solid $highlight
@@ -196,6 +202,13 @@ div.contact
   .main-nav
     display: flex
 
+  p
+    width: 40%
+  div.banner
+    h3
+      padding-top: 160px
+  a.mail-button
+    width: 25rem !important
   .header
     flex-direction: column
     align-items: center
